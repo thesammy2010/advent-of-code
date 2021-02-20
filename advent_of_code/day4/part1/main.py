@@ -2,7 +2,6 @@ from typing import Dict, List
 
 from advent_of_code.helpers.helpers import read_file
 
-
 class Passport(object):
     def __init__(
         self, 
@@ -24,10 +23,10 @@ class Passport(object):
         self.pid: str = pid
         self.cid: str = cid
 
+
 def cleanup_input(file: str) -> List[str]:
     # take input and return a list of passport strings
     return [i.replace("\n", " ") for i in file.split("\n\n")]
-
 
 
 def create_passport(line: str) -> Passport:
