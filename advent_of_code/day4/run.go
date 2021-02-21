@@ -2,7 +2,7 @@ package main
 
 import (
 	"advent-of-code/advent_of_code/day4/part1"
-	// "advent-of-code/advent_of_code/day3/part2"
+	"advent-of-code/advent_of_code/day4/part2"
 	"fmt"
 	"os"
 )
@@ -12,9 +12,9 @@ func main() {
 	c := part1.Main("advent_of_code/day4/input.txt")
 	fmt.Println(c)
 
-	// fmt.Println("Part 2")
-	// c = part2.Main("advent_of_code/day3/input.txt")
-	// fmt.Println(c)
+	fmt.Println("Part 2")
+	d := part2.Main("advent_of_code/day4/input.txt")
+	fmt.Println(d)
 
 	os.Exit(0)
 

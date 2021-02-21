@@ -31,19 +31,16 @@ public class main_test {
         Passport p8 = new Passport("2007", "2023", "2038", "59cm", "74454a", "zzz", "3556412378", "277");
         
         Passport troubleMaker = new Passport("1932", null, "2024", "157cm", "#6b5442", "brn", "4275535874", null);
-//         hcl:#6b5442 hgt:157cm byr:1932 ecl:brn pid:4275535874
-// eyr:2024 iyr:2015
 
-        // assertTrue(part2.checkPassportIsValidV2(p1));
-        // assertTrue(part2.checkPassportIsValidV2(p2));
-        // assertTrue(part2.checkPassportIsValidV2(p3));
-        // assertTrue(part2.checkPassportIsValidV2(p4));
-        // assertFalse(part2.checkPassportIsValidV2(p5));
-        // assertFalse(part2.checkPassportIsValidV2(p6));
-        // assertFalse(part2.checkPassportIsValidV2(p7));
-        // assertFalse(part2.checkPassportIsValidV2(p8));
+        assertTrue(part2.checkPassportIsValidV2(p1));
+        assertTrue(part2.checkPassportIsValidV2(p2));
+        assertTrue(part2.checkPassportIsValidV2(p3));
+        assertTrue(part2.checkPassportIsValidV2(p4));
+        assertFalse(part2.checkPassportIsValidV2(p5));
+        assertFalse(part2.checkPassportIsValidV2(p6));
+        assertFalse(part2.checkPassportIsValidV2(p7));
+        assertFalse(part2.checkPassportIsValidV2(p8));
         assertFalse(part2.checkPassportIsValidV2(troubleMaker));
-
 
     }
 
