@@ -5,8 +5,8 @@ from advent_of_code.day5.part1.main import Seat, convert, create_seat, main
 class TestDay5Part1(TestCase):
 
     def test_convert(self) -> None:
-        self.assertEquals(convert("L"), 0)
-        self.assertEquals(convert("R"), 1)
+        self.assertEqual(convert("L"), 0)
+        self.assertEqual(convert("R"), 1)
         self.assertEqual(convert("LRLRLR"), 21)
 
     def test_create_seat(self) -> None:
