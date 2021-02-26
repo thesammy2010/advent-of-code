@@ -9,12 +9,12 @@ import (
 )
 
 type Seat struct {
-	row    int
-	column int
+	Row    int
+	Column int
 	SeatID int
 }
 
-func convert(line string) int {
+func Convert(line string) int {
 	line = strings.ReplaceAll(line, "F", "0")
 	line = strings.ReplaceAll(line, "B", "1")
 	line = strings.ReplaceAll(line, "L", "0")
@@ -31,8 +31,8 @@ func convert(line string) int {
 
 func CreateSeat(line string) Seat {
 
-	row := convert(line[:7])
-	column := convert(line[7:])
+	row := Convert(line[:7])
+	column := Convert(line[7:])
 	seatID := row*8 + column
 
 	s := Seat{row, column, seatID}
