@@ -2,7 +2,7 @@ from unittest import TestCase
 
 from advent_of_code.day5.part1.main import Seat, convert, create_seat, main
 
-class TestDay5Part1(TestCase):
+class TestDayPart1(TestCase):
 
     def test_convert(self) -> None:
         self.assertEquals(convert("L"), 0)
