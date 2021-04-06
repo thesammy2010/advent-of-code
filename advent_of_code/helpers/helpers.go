@@ -6,6 +6,12 @@ import (
 	"os"
 )
 
+type HashsetMap map[string]struct{}
+
+type Hashset struct {
+	set HashsetMap
+}
+
 func ReadFile(filename string) (string, error) {
 	file, err := ioutil.ReadFile(filename)
 	if err != nil {
