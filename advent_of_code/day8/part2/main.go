@@ -19,7 +19,6 @@ func Change(rs []string, indexToChange int) []string {
 func Main(filepath string) int {
 
 	rows, err := helpers.ReadFileLineByLine(filepath)
-	orig_rows := rows
 	if err != nil {
 		panic(err)
 	}
@@ -34,10 +33,6 @@ func Main(filepath string) int {
 			changableIndexes = append(changableIndexes, k)
 		}
 	}
-	// changeableIndexValues := make([]int, 0)
-	// for i := range changableIndexes {
-	// 	changeableIndexValues = append(changeableIndexValues, i)
-	// }
 	nextIndex := -1
 	// main run
 	for {
@@ -49,7 +44,7 @@ func Main(filepath string) int {
 		if _, ok := indexes[ind]; ok {
 
 			nextIndex += 1
-			orig_rows, _ = helpers.ReadFileLineByLine(filepath)
+			orig_rows, _ := helpers.ReadFileLineByLine(filepath)
 			rows = Change(orig_rows, changableIndexes[nextIndex])
 			ind = 0
 			acc = 0

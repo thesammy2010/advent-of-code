@@ -19,7 +19,6 @@ public class part1 {
         if (act.charAt(0) == "nop".charAt(0)) {
             action = Arrays.asList(1, 0);
         } else if (act.charAt(0) == "acc".charAt(0)) {
-            System.out.println("test");
             action = Arrays.asList(1, val);
         } else {
             action = Arrays.asList(val, 0);
