@@ -5,7 +5,7 @@ from advent_of_code.day8.part1.main import action, main
 
 class TestDay8Part1(TestCase):
 
-    def test_change(self) -> None:
+    def test_action(self) -> None:
         expected_result1: Tuple[int] = 1, 0
         expected_result2: Tuple[int] = -3, 0
         expected_result3: Tuple[int] = 1, 6
