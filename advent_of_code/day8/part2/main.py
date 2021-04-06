@@ -30,15 +30,12 @@ def main(filepath: str) -> int:
         # swap condition
         if ind in indexes:
             switched_index: int = next(changable_indexes)
-            print(f"swapping index {switched_index} and resetting")
             indexes = []; ind = 0; acc = 0
             rows = orig_rows
             rows = change(rs=rows, index_to_change=switched_index)
             # there's some random memory leak here
             orig_rows = read_file_line_by_line(filepath=filepath)  
             assert orig_rows == read_file_line_by_line(filepath=filepath)
-
-            print("Index: {1}\tAcc: {2}\tRow: `{0}`".format(rows[ind], ind, acc))
             continue
 
         # terminated successfully
