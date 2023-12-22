@@ -20,3 +20,10 @@
 # Go workspace file
 go.work
 .idea
+
+.vscode/
+venv/
+**__pycache__**
+**/*.class
+**/*.DS_Store
+target/
